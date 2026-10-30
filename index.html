@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="index.html" class="logo">Mi Sitio</a>
     
         <button class="hamburguesa" id="btnMenu">
@@ -18,7 +18,7 @@
             <span></span>
         </button>
 
-        <nav>
+        <nav class="menu">
             <ul class="menu" id="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -33,25 +33,68 @@
 
     <main>
 
-        <section class="portada">
+        <section class="portada contenedor" >
 
             <h1>Lavacar de autos a domicilio</h1>
             <p>Dejamos su auto como nuevo sin que tenga que salir de casa   </p>
-            <a href="contacto.html" class="btn">Resarva Ahora</a>
+            <a href="contacto.html" class="boton">Resarva Ahora</a>
         </section>
-        <section class="servicios">
+        <section class="servicios contenedor">
 
             <h2>Servicios</h2>
 
-            <ol>
-                <li>Lavado</li>
-                <li>Pulido</li>
-                <li>Encerado</li>
-            </ol>
+            <div class="cards">
+            <article class="tarjeta">
+            <img src="img/servicio-1.jpg" alt="Servicio 1">
+            <h3>Título</h3>
+            <p>Descripción breve.</p>
+            <a href="#" class="boton">Ver más</a>
+            </article>
+
+            <article class="tarjeta">
+            <img src="img/servicio-1.jpg" alt="Servicio 1">
+            <h3>Título</h3>
+            <p>Descripción breve.</p>
+            <a href="#" class="boton">Ver más</a>
+            </article>
+            <!-- repite el article hasta tener seis tarjetas -->
+            <article class="tarjeta">
+            <img src="img/servicio-1.jpg" alt="Servicio 1">
+            <h3>Título</h3>
+            <p>Descripción breve.</p>
+            <a href="#" class="boton">Ver más</a>
+            </article>
+            </div>
                 
 
         </section>
-        <section class="galeria">
+
+        <section class="preguntas contenedor">
+            <h2>Preguntas frecuentes</h2>
+                <div class="accordion">
+                <div class="item">
+                <button class="titulo">¿Pregunta uno?</button>
+                <div class="contenido"><p>Respuesta uno.</p></div>
+                </div>
+    <!-- repite .item hasta tener cuatro preguntas -->
+  </div>
+  <div class="accordion">
+    <div class="item">
+      <button class="titulo">¿Pregunta uno?</button>
+      <div class="contenido"><p>Respuesta uno.</p></div>
+    </div>
+    <!-- repite .item hasta tener cuatro preguntas -->
+  </div>
+  <div class="accordion">
+    <div class="item">
+      <button class="titulo">¿Pregunta uno?</button>
+      <div class="contenido"><p>Respuesta uno.</p></div>
+    </div>
+    <!-- repite .item hasta tener cuatro preguntas -->
+  </div>
+</section>
+
+        <section class="galeria contenedor">
             
             <h2>Galeria</h2>
 
@@ -67,7 +110,7 @@
     
     </main>
 
-    <footer>
+    <footer class="footer">
         <div>
             <p>
                 <strong>Mi Sitio</strong>
